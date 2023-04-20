@@ -97,8 +97,8 @@ fontrect = pg.font.Font('freesansbold.ttf', 15)
 # text = font.render('', True, (255,142,199), (229,204,255)) # (text,is smooth?,letter color,background color)
 # textRect = text.get_rect() # text size
 #ใส่ชื่อเล่น
-nikname = font.render('nikname :', True, (153,0,153),None)
-niknameRect = nikname.get_rect()
+nickname = font.render('nikname :', True, (153,0,153),None)
+nicknameRect = nickname.get_rect()
 #ใส่ชื่อจริง
 name = font.render('name :', True, (153,0,153),None)
 nameRect = name.get_rect()
@@ -112,7 +112,7 @@ submitRect = submit.get_rect()
 
 
 
-niknameRect.bottomleft = (200,70)
+nicknameRect.bottomleft = (200,70)
 nameRect.bottomleft =(200,170)
 ageRect.bottomleft = (200,270)
 submitRect.bottomleft = (470,350)
@@ -129,7 +129,7 @@ system = pg.cursors.Cursor(pg.SYSTEM_CURSOR_HAND)
 while run:
     screen.fill((255, 255, 255))
 
-    screen.blit(nikname, niknameRect)
+    screen.blit(nickname, nicknameRect)
     screen.blit(name, nameRect)
     screen.blit(age, ageRect)
 
